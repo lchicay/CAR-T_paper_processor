@@ -25,16 +25,19 @@ Your primary goal is to populate the YAML frontmatter with extreme accuracy and 
 **[START OF TEMPLATE]**
 
 ---
-%%# --- Study Identification ---%%
-%%# General metadata to identify the trial and publication.%%
+%%
+# --- Study Identification ---
+# General metadata to identify the trial and publication.
+%%
 type: Clinical_Trial_Summary
 study_name: 
 study_NCT: 
 source_paper: # [APA style: Author, A. A. (Year). Title. Journal, volume(issue), pages.]
 data_cutoff_date: # [YYYY-MM-DD]
-%%%%
-%%# --- Treatment Protocol ---%%
-%%# Details of the therapeutic intervention.%%
+%%
+# --- Treatment Protocol ---
+# Details of the therapeutic intervention.
+%%
 product: 
 target: # [e.g., CD19, BCMA]
 phase: # [e.g., Phase 1, Phase 2, Phase 3, Phase 1/2]
@@ -43,16 +46,18 @@ treatment_line:
 lymphodepletion_regimen: # [e.g., "Fludarabine/Cyclophosphamide"]
 car_t_dose_target: # [e.g., "2.0e6 CAR+ T cells/kg"]
 bridging_therapy_allowed: # (string; yes or no)
-%%%%
-%%# --- Manufacturing & Product Characteristics ---%%
-%%# Data related to the CAR-T cell product itself.%%
+%%
+# --- Manufacturing & Product Characteristics ---
+# Data related to the CAR-T cell product itself.
+%%
 manufacturing_success_rate_pct: # (number only)
 manufacturing_time_days: # (number, typically median Vein-to-Vein time)
 phenotype_starting_material: # (string, e.g., "High % of naive/memory T cells")
 phenotype_drug_product: # (string, e.g., "Predominantly CD8+ central memory T cells")
-%%%%
-%%# --- Patient Population Characteristics ---%%
-%%# Key baseline data, typically from Table 1.%%
+%%
+# --- Patient Population Characteristics ---
+# Key baseline data, typically from Table 1
+%%
 n_treated: # (number)
 median_age: # (number)
 age_range: # (string, e.g., "23-76")
@@ -62,9 +67,10 @@ ecog_0_1_pct: # (number only)
 refractory_disease_pct: # (number only)
 prior_asct_pct: # (number only)
 high_tumor_burden_pct: # (number only)
-%%%%
-%%# --- Efficacy Outcomes ---%%
-%%# Primary and key secondary efficacy endpoints.%%
+%%
+# --- Efficacy Outcomes ---
+# Primary and key secondary efficacy endpoints.
+%%
 median_follow_up_months: # (number)
 orr_pct: # (number only)
 cr_pct: # (number only)
@@ -73,44 +79,54 @@ median_pfs_months: # (number, use null if Not Reached/Achieved)
 os_rate_12_months_pct: # (number only)
 os_rate_24_months_pct: # (number only)
 median_os_months: # (number, use null if Not Reached/Achieved)
-%%%%
-%%# --- Safety Profile ---%%
-%%# Key toxicity data.%%
-%%# Cytokine Release Syndrome (CRS)%%
+%%
+# --- Safety Profile ---
+# Key toxicity data.
+# Cytokine Release Syndrome (CRS)
+%%
 crs_any_grade_pct: 
 crs_grade_3_plus_pct: 
 crs_median_onset_days: 
 crs_median_duration_days: 
-%%# Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS)%%
+%%
+# Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS)
+%%
 icans_any_grade_pct: 
 icans_grade_3_plus_pct: 
 icans_median_onset_days: 
 icans_median_duration_days: 
-%%# Hematologic Toxicity (Grade >=3)%%
+%%
+# Hematologic Toxicity (Grade >=3)
+%%
 neutropenia_grade_3_plus_pct: 
 anemia_grade_3_plus_pct: 
 thrombocytopenia_grade_3_plus_pct: 
-%%# Other Key Safety Data%%
+%%
+# Other Key Safety Data
+%%
 infections_grade_3_plus_pct: 
 treatment_related_deaths_note: # (string, e.g., "5 deaths; 3 CAR-T related (CRS, ICANS), 2 non-related (sepsis)")
-%%%%
-%%# --- Pharmacokinetics (PK) ---%%
-%%# In-vivo CAR-T cell kinetics.%%
+%%
+# --- Pharmacokinetics (PK) ---
+# In-vivo CAR-T cell kinetics.
+%%
 pk_median_cmax_cells_per_ul: # (number, Cmax)
 pk_median_tmax_days: # (number, Tmax)
 pk_auc_0_28_days: # (string, include value and units, e.g., "98,700 days x cells/μL")
 pk_persistence_note: # (string, e.g., "Detectable in 60% of patients at 6 months")
-%%%%
-%%# --- Biomarker Findings ---%%
-%%# Key translational insights from the trial.%%
+%%
+# --- Biomarker Findings ---
+# Key translational insights from the trial.
+%%
 biomarker_mrd_note: # (string, e.g., "MRD negativity at Day 28 associated with durable response")
 biomarker_b_cell_aplasia_note: # (string, e.g., "Ongoing B-cell aplasia at 3 months correlated with PFS")
 biomarker_serum_cytokines_note: # (string, e.g., "Peak levels of IL-6, IFN-γ, and IL-10 associated with CRS severity")
 biomarker_crp_il6_note: # (string, e.g., "Baseline CRP >20 mg/L associated with higher risk of severe ICANS")
 biomarker_cart_phenotype_note: # (string, e.g., "Post-infusion memory phenotype associated with durable response")
 biomarker_immunogenicity_note: # (string, e.g., "ADA detected in 5% of patients, no impact on PK or response")
-%%%%
-%%# --- Tags ---%%
+%%
+# --- Tags ---
+%%
 tags:
   - clinical-trial
   # Add other tags like product name, indication, etc.
