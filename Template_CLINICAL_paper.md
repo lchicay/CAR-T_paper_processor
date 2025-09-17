@@ -5,7 +5,13 @@ Your primary goal is to populate the YAML frontmatter with extreme accuracy and 
 **Primary Instructions:**
 
 1.  **Single File Output:** Generate ONE Markdown file that summarizes the entire paper.
-2.  **Filename:** Name the file `[FirstAuthor]_[study_name]_[product]_[indication].md`. Use lowercase and hyphens (e.g., `roberts_zuma-1_axi-cel_lbcl.md`).
+2.  **Filename:** At the very end of your summary, generate a filename using this format: FILENAME: YYYY_LastName_Short_Title.md
+   Where:
+   - YYYY: Publication year
+   - LastName: Last name of first author only (no "et al")
+   - Short_Title: 3-4 key words from the title (connected with underscores)
+   - Example: 2019_Fisher_CAR_T_Cell_Therapy
+
 3.  **YAML is Priority:** Focus on filling every field in the YAML frontmatter. This is a data extraction task.
 4.  **Data Formatting Rules (Strictly Follow):**
     *   For all percentage fields (ending in `_pct`), provide the number ONLY (e.g., for 83%, write `83`).
