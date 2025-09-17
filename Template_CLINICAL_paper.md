@@ -9,7 +9,7 @@ Your primary goal is to populate the YAML frontmatter with extreme accuracy and 
    Where:
    - YYYY: Publication year
    - LastName: Last name of first author only (no "et al")
-   - Short_Title: 3-4 key words from the title (connected with underscores)
+   - Short_Title: 6-8 key words from the title (connected with underscores)
    - Example: 2019_Fisher_CAR_T_Cell_Therapy
 
 3.  **YAML is Priority:** Focus on filling every field in the YAML frontmatter. This is a data extraction task.
