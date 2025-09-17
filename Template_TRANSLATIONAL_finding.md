@@ -12,8 +12,6 @@ For each distinct finding you identify, you will generate a separate Markdown (.
 **[START OF TEMPLATE]**
 
 ---
-# --- Core Relationship ---
-# Describes the fundamental association.
 finding_domain: # [Patient_Related, Tumor_Related, Product_Related, Treatment_Related, Post_Infusion_Dynamics]
 finding_nature: # [Predictive, Prognostic, Correlative, Mechanistic]
 factor_parameter: # [Single or hyphenated term, e.g., Serum-IL-6, T-cell-Exhaustion, Tumor-Burden]
@@ -21,9 +19,6 @@ factor_category: # [Biomarker_Serum, Biomarker_Cellular_Apheresis, Biomarker_Cel
 outcome_category: # [Efficacy_Response, Efficacy_Durability, Efficacy_Survival, Toxicity_CRS, Toxicity_ICANS, Toxicity_Hematologic, Toxicity_Other, Pharmacokinetic, Pharmacodynamic]
 outcome_affected: # [Specific outcome, e.g., Overall-Survival, CRS-Severity, CAR-T-Expansion]
 association_direction: # [Positive, Negative, None, Complex]
-
-# --- Context & Specifics ---
-# Provides the clinical and study context for the finding.
 product: # [e.g., Axicabtagene-Ciloleucel, Tisagenlecleucel, Liso-cel, All-Approved]
 target: # [e.g., CD19, BCMA]
 indication: # [e.g., R-R-Large-B-Cell-Lymphoma]
@@ -35,13 +30,10 @@ n_patients_in_analysis: # [Number of patients included in this specific analysis
 data_source_type: # [Pivotal_Trial_Data, RWS_Data, Pooled_Analysis, Single_Center_Study]
 analysis_type: # [Univariate, Multivariate]
 source_paper: # [APA style reference: Author, A. A. (Year). Title of work. Journal Name, volume(issue), pages.]
-
-# --- Curation & Nuance ---
-# Captures the scientific strength and expert interpretation.
-strength_of_evidence: # [Strong, Moderate, Weak, Emerging]
-
-# --- Tags for Broad Strokes ---
-tags: # [List of relevant single-word, lowercase tags]
+strength_of_evidence: # Captures the scientific strength and expert interpretation [Strong, Moderate, Weak, Emerging]
+tags: 
+- translational
+- Add tags for product name, indication, study name, etc (minimum of 5 and maximum of 7)
 ---
 
 ## Original Clinical Paper
@@ -83,7 +75,4 @@ tags: # [List of relevant single-word, lowercase tags]
 *   **`Original Clinical Paper` Section**: If the translational paper analyzes samples from a specific, published clinical trial (e.g., ZUMA-1), find and cite the primary clinical trial publication here in APA format.
 
 Now, please process the following paper and extract all the significant translational findings. Generate one .md file for each finding.
-
 ---
-**[PASTE THE FULL TEXT OF THE SCIENTIFIC PAPER HERE]**
----****
