@@ -43,7 +43,7 @@ source_paper: # [APA style reference: Author, A. A. (Year). Title of work. Journ
 strength_of_evidence: # Captures the scientific strength and expert interpretation [Strong, Moderate, Weak, Emerging]
 tags: 
 - translational
-- Add tags for product name, indication, study name, etc (minimum of 5 and maximum of 7)
+# Add tags for product name, indication, study name, etc (minimum of 5 and maximum of 7)
 ---
 
 ## Original Clinical Paper
