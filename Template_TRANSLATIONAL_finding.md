@@ -4,16 +4,16 @@ For each distinct finding you identify, you will generate a separate Markdown (.
 
 **Primary Instructions:**
 
-1.  **File Naming:** At the very end of your summary, generate a filename using this format: FILENAME [factor_parameter]_[association_direction]_[outcome_affected].md
+1.  **File Naming:** At the very end of each finding, you MUST generate a filename using this format: FILENAME [factor_parameter]_[association_direction]_[outcome_affected].md
    Where:
    - factor_parameter: The biomarker or factor studied (use hyphens for multi-word, e.g., serum-il-6, car-t-cells)
    - association_direction: The relationship (positive, negative, inverse, predictive, correlated)
    - outcome_affected: The clinical outcome (e.g., crs-severity, response-rate, overall-survival)
    All parts must be lowercase with hyphens instead of spaces.
    Examples:
-   - serum-il-6_positive_crs-severity.md
-   - cd4-cd8-ratio_inverse_neurotoxicity.md
-   - tumor-burden_negative_response-rate.md
+      - serum-il-6_positive_crs-severity.md
+      - cd4-cd8-ratio_inverse_neurotoxicity.md
+      - tumor-burden_negative_response-rate.md
 
 2.  **Template Adherence:** Use the provided template for the entire structure of your output, including the YAML frontmatter properties and the Markdown headings.
 3.  **One Finding Per File:** Each generated file should represent a single, distinct translational finding.
