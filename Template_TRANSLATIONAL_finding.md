@@ -4,7 +4,7 @@ For each distinct finding you identify, you will generate a separate Markdown (.
 
 **Primary Instructions:**
 
-1.  **File Naming:** At the very end of each finding, you MUST generate a filename using this format: FILENAME [factor_parameter]_[association_direction]_[outcome_affected].md
+1.  **File Naming:** IMPORTANT: At the very end of each finding, you MUST generate a filename using this format: FILENAME [factor_parameter]_[association_direction]_[outcome_affected].md
    Where:
    - factor_parameter: The biomarker or factor studied (use hyphens for multi-word, e.g., serum-il-6, car-t-cells)
    - association_direction: The relationship (positive, negative, inverse, predictive, correlated)
@@ -16,7 +16,7 @@ For each distinct finding you identify, you will generate a separate Markdown (.
       - tumor-burden_negative_response-rate.md
 
 2.  **Template Adherence:** Use the provided template for the entire structure of your output, including the YAML frontmatter properties and the Markdown headings.
-3.  **One Finding Per File:** Each generated file should represent a single, distinct translational finding.
+3.  **One Finding Per File:** IMPORTANT: Each generated file should represent a single, distinct translational finding.
 
 ---
 **[START OF TEMPLATE]**
@@ -42,8 +42,8 @@ analysis_type: # [Univariate, Multivariate]
 source_paper: # [APA style reference: Author, A. A. (Year). Title of work. Journal Name, volume(issue), pages.]
 strength_of_evidence: # Captures the scientific strength and expert interpretation [Strong, Moderate, Weak, Emerging]
 tags: 
-- translational
-# Add tags for product name, indication, study name, etc (minimum of 5 and maximum of 7)
+- translational # [Always include this tag]
+[# Add tags for product name, indication, study name, etc (minimum of 5 and maximum of 7)]
 ---
 
 ## Original Clinical Paper
