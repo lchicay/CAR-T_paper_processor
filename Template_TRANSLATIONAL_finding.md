@@ -17,7 +17,10 @@ For each distinct finding you identify, you will generate a separate Markdown (.
 
 2.  **Template Adherence:** Use the provided template for the entire structure of your output, including the YAML frontmatter properties and the Markdown headings.
 3.  **One Finding Per File:** IMPORTANT: Each generated file should represent a single, distinct translational finding.
-
+4.  IMPORTANT: do NOT use ``` in your output. The putput file MUST begin with
+   "---
+   finding_domain:"
+   and end with ".md"
 ---
 **[START OF TEMPLATE]**
 
