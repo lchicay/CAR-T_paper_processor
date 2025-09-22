@@ -9,7 +9,7 @@ For each distinct finding you identify, you will generate a separate Markdown (.
    - factor_parameter: The biomarker or factor studied (use hyphens for multi-word, e.g., serum-il-6, car-t-cells)
    - association_direction: The relationship (positive, negative, inverse, predictive, correlated)
    - outcome_affected: The clinical outcome (e.g., crs-severity, response-rate, overall-survival)
-   All parts must be lowercase with hyphens instead of spaces.
+   All parts must be lowercase with hyphens instead of spaces. Do NOT include [] in the file name.
    Examples:
       - serum-il-6_positive_crs-severity.md
       - cd4-cd8-ratio_inverse_neurotoxicity.md
