@@ -42,7 +42,7 @@ study_NCT: # [e.g., NCT02348216]
 n_patients_in_analysis: # [Number of patients included in this specific analysis, e.g., 158]
 data_source_type: # [Pivotal_Trial_Data, RWS_Data, Pooled_Analysis, Phase 1 Clinical Trial, Phase 2 Clinical Trial]
 analysis_type: # [Univariate, Multivariate]
-source_paper: # [APA style reference: Author, A. A. (Year). Title of work. Journal Name, volume(issue), pages.]
+source_paper: # [APA style reference: Author, A. A. (Year). Title of work. Journal Name, volume(issue), pages.You MUST enclose the entire string in quotes]
 strength_of_evidence: # Captures the scientific strength and expert interpretation [Strong, Moderate, Weak, Emerging]
 tags: 
 - translational # [Always include this tag]
