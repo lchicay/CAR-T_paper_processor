@@ -34,7 +34,7 @@ Your primary goal is to populate the YAML frontmatter with extreme accuracy and 
 type: Clinical_Trial_Summary
 study_name: 
 study_NCT: 
-source_paper: # [APA style: Author, A. A. (Year). Title. Journal, volume(issue), pages.]
+source_paper: # [APA style: Author, A. A. (Year). Title. Journal, volume(issue), pages.You MUST enclose the entire string in quotes]
 data_cutoff_date: # [YYYY-MM-DD]
 product: 
 target: # [e.g., CD19, BCMA]
@@ -89,7 +89,7 @@ biomarker_crp_il6_note: # (string, e.g., "Baseline CRP >20 mg/L associated with 
 biomarker_cart_phenotype_note: # (string, e.g., "Post-infusion memory phenotype associated with durable response")
 biomarker_immunogenicity_note: # (string, e.g., "ADA detected in 5% of patients, no impact on PK or response")
 tags:
-  - clinical-trial
+  - clinical-trial # Always include this tag
   # Add tags like product name, indication, study name, etc (minimum of 4 and maximum of 7)
 ---
 
