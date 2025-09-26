@@ -107,8 +107,9 @@ tags:
 TABLE WITHOUT ID
   file.link AS "Finding",
   factor_parameter AS "Factor",
+  association_direction AS "Direction",
   outcome_affected AS "Outcome",
-  association_direction AS "Direction"
+  association_strength AS "Strength"
 FROM #translational
 WHERE 
   contains(lower(source_paper), lower(split(this.source_paper, " ")[0])) AND
