@@ -70,7 +70,7 @@ Use the provided template for the entire structure of your output, including the
 **[START OF TEMPLATE]**
 
 ---
-finding_domain: # [Patient_Related, Tumor_Related, Product_Related, Treatment_Related, Post_Infusion_Dynamics]
+finding_domain: # [Patient_Related (e.g.: baseline characteristics), Tumor_Related, Product_Related, Treatment_Related, Post_Infusion_Dynamics]
 finding_nature: # [Predictive, Prognostic, Correlative, Mechanistic]
 factor_parameter: # [Single or hyphenated term, e.g., Serum-IL-6, T-cell-Exhaustion, Tumor-Burden]
 factor_category: # [Biomarker_Serum, Biomarker_Cellular_Apheresis, Biomarker_Cellular_Product, Biomarker_Cellular_PostInfusion, Biomarker_Tumor_Microenvironment, Biomarker_Genetic_Tumor, Biomarker_Imaging, Patient_Characteristic, Tumor_Characteristic, Treatment_Procedure, Pharmacokinetic_Parameter]
