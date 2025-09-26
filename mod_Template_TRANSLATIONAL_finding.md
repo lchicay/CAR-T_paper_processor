@@ -81,7 +81,7 @@ association_strength: # [Strong (p<0.001), Moderate (p<0.01), Weak (p<0.05), Tre
 product: # [e.g., Axicabtagene-Ciloleucel, Tisagenlecleucel, Liso-cel, CTL019]
 target: # [e.g., CD19, BCMA]
 indication: # [e.g., R-R-Large-B-Cell-Lymphoma]
-treatment_line: # [e.g., Second-Line, Third-or-later-Line]
+treatment_line: # [e.g., Second-Line, Third-or-later-Line. You MUST enclose the entire string in quotes]
 measurement_point: # [e.g., Leukapheresis, Pre-Lymphodepletion, Infusion-Product, Post-Infusion-D7]
 study_name: # [e.g., ZUMA-1, JULIET, TRANSCEND-NHL-001]
 study_NCT: # [e.g., NCT02348216]
