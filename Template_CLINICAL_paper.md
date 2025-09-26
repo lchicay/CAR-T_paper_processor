@@ -102,7 +102,7 @@ tags:
 
 # Summary of Translational & Biomarker Findings
 - [Up to 6 key bullet points summarizing biomarker, PK, or other correlative science findings.]
-
+[include the code below]
 ```dataview
 TABLE WITHOUT ID
   file.link AS "Finding",
