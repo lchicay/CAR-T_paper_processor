@@ -107,12 +107,13 @@ tags:
 TABLE WITHOUT ID
   file.link AS "Finding",
   factor_parameter AS "Factor",
-  association_direction AS "Direction",
   outcome_affected AS "Outcome",
-  association_strength AS "Strength"
+  association_direction AS "Direction"
 FROM #translational
 WHERE 
-  contains(lower(source_paper), lower(split(this.source_paper, ",")[0]))
+  contains(lower(source_paper), lower(split(this.source_paper, " ")[0])) AND
+  any(["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027"], 
+      (year) => contains(this.source_paper, year) AND contains(source_paper, year))
 SORT file.name ASC
 ```
 
