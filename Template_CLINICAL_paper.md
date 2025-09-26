@@ -103,6 +103,19 @@ tags:
 # Summary of Translational & Biomarker Findings
 - [Up to 6 key bullet points summarizing biomarker, PK, or other correlative science findings.]
 
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Finding",
+  factor_parameter AS "Factor",
+  association_direction AS "Direction",
+  outcome_affected AS "Outcome",
+  association_strength AS "Strength"
+FROM #translational
+WHERE 
+  contains(lower(source_paper), lower(split(this.source_paper, ",")[0]))
+SORT file.name ASC
+```
+
 # Summary of Manufacturing & Drug Product Characteristics
 - [Up to 6 key bullet points summarizing manufacturing success, timelines, and key product attributes.]
 
