@@ -33,7 +33,7 @@ Your primary goal is to populate the YAML frontmatter with extreme accuracy and 
 
 ---
 type: Clinical_Trial_Summary
-study_name: 
+study_name: # [Clinical trial name, not the name of the paper/manuscript]
 study_NCT: 
 source_paper: # [APA style: Author, A. A. (Year). Title. Journal, volume(issue), pages.You MUST enclose the entire string in quotes]
 data_cutoff_date: # [YYYY-MM-DD]
